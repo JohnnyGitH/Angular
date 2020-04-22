@@ -1,0 +1,26 @@
+<div class="main-div">
+    <mat-card >
+        <mat-card-header>
+            <mat-toolbar-row>
+                <h2>
+                    <span>Angular</span>
+                </h2>
+            </mat-toolbar-row> 
+        </mat-card-header>
+        <img mat-card-image src="./assets/image.jpg" alt="Photo of crazy wife">
+        <mat-card-content>
+                <h3>This is a project to help learn about Angular and RXJS</h3>
+        </mat-card-content>
+        <mat-card-actions class="buttons row">
+            <button mat-raised-button class="capitalize" color="warn" (click)="navigateTo('/web-storage')">
+                Web Storage !
+            </button>
+            <button mat-raised-button class="capitalize" color="warn" (click)="navigateTo('/item-replay')">
+                Random Item Generator with a Replay subject
+            </button>
+            <button mat-raised-button class="capitalize" color="warn" (click)="navigateTo('/reactive-dynamic-complex-forms')">
+                Reactive Forms && Dynamic Forms && Complex Forms
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>

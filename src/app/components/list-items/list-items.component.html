@@ -1,0 +1,22 @@
+<mat-card>
+    <mat-card-title> Item List</mat-card-title>
+    <mat-card-subtitle>Using Input to get the Clicks for each button</mat-card-subtitle>
+    <mat-card-content>
+        <div class="column">
+            <h3>Submit Clicks:</h3>
+            <p>{{ getSubmitClicks }}</p>
+            <h3>Clear Clicks:</h3>
+            <p>{{ getClearClicks }}</p>
+            
+        </div>
+            <ul>                   
+                <li *ngFor="let item of this.items | async"> 
+                    <mat-card>
+                    Alias: {{ item.alias }} -
+                    First Name: {{ item.firstName}} - 
+                    Last Name: {{ item.lastName}}
+                    </mat-card>
+                </li>
+            </ul>
+    </mat-card-content>
+</mat-card>

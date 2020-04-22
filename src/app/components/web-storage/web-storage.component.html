@@ -1,0 +1,91 @@
+<div class="main-div">
+    <mat-card >
+        <mat-card-header>
+            <mat-toolbar-row>
+                <h2>
+                    <span>Web Storage</span>
+                </h2>
+            </mat-toolbar-row> 
+        </mat-card-header>
+        <img mat-card-image src="./assets/storage.png" alt="storage">
+        <mat-card-content class="column">
+                <h3>This is a project to help learn about Angular and RXJS</h3>
+        <mat-form-field>
+            <label>Key</label>
+            <input [formControl]="this.keyInputField" matInput/>
+        </mat-form-field>
+        <mat-form-field>
+            <label>Value</label>
+            <input [formControl]="this.valueInputField" matInput/>
+        </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions class="buttons row">
+            <button mat-raised-button 
+            class="capitalize" 
+            color="primary" 
+            (click)="addKVPToLocalStorage()">
+                Send this to Local Storage
+            </button>
+            <button mat-raised-button 
+            class="capitalize" 
+            color="warn" 
+            (click)="addKVPToSessionStorage()">
+                Send this to Session Storage(@ most 5mb)
+            </button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card >
+        <mat-card-header>
+            <mat-toolbar-row>
+                <h2>
+                    <span>Storages</span>
+                </h2>
+            </mat-toolbar-row> 
+        </mat-card-header>
+        <mat-card-content> 
+            <div class="localStorageDiv">
+                <h3>Local Storage</h3>
+                <pre><code>{{this.localStorageState | async | json}}</code></pre>
+            </div>
+            <div>
+                <h3>Session Storage</h3>
+                <pre><code>{{this.sessionStorageState | async | json}}</code></pre>
+            </div>
+        </mat-card-content>
+        <mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-toolbar-row>
+                <h2>
+                    <span>Delete a thing!</span>
+                </h2>
+            </mat-toolbar-row> 
+        </mat-card-header>
+        <mat-card-content> 
+            <mat-form-field>
+                <label>Enter Key:</label>
+                <input [formControl]="this.keyInputField" matInput/>
+            </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions class="buttons row">
+            <button mat-raised-button 
+            class="capitalize" 
+            color="warn"
+            (click)="deleteLocalKVP()" >
+                Delete From Local Storage
+            </button>
+            <button mat-raised-button 
+            class="capitalize" 
+            color="primary"
+            (click)="deleteSessionKVP()" >
+                Delete From Session Storage
+            </button>
+            <button mat-raised-button 
+            class="capitalize" 
+            color="warn"
+            (click)="deleteBothSessionLocalKVP()" >
+                Delete everything, watch the world burn
+            </button>
+        </mat-card-actions>
+        <!--<button mat-stroked-button (click)="this.changeLanguage()">{{ 'I18N.BUTTONS.LANGUAGE' | translate }}</button>-->
+    </mat-card>
+</div>

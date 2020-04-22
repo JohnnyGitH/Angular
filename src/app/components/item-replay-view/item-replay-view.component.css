@@ -1,0 +1,17 @@
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .main-div{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mat-card {
+      min-width: 500px;
+      min-height: 100px;
+  }

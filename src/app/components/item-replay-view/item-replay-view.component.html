@@ -1,0 +1,21 @@
+<div class="main-div">
+    <mat-card>
+        <mat-card-title> Replay Subject Item</mat-card-title>
+        <mat-card-subtitle>Click Submit to generate a new random thing</mat-card-subtitle>
+        <mat-card-content>
+        </mat-card-content>
+        <mat-card-footer>
+            <div class="buttons">
+                <button mat-raised-button 
+                color="primary"
+                (click)= "submitReplayItem($event)"
+                >Submit</button>
+                <button mat-raised-button 
+                color="primary"
+                (click)= "clearReplaySubject($event)"
+                >Clear Replay Subject</button>
+            </div>
+        </mat-card-footer>
+    </mat-card>
+    <app-list-items [submitClicks]="submitClicks" [clearClicks]="clearClicks"></app-list-items>
+</div>
