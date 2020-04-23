@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatCardModule, MatFormField, MatFormFieldModule, MatInputModule, MatDividerModule, MatToolbarModule, MatIconModule} from '@angular/material';
+import { MatCardModule, MatFormFieldModule, MatInputModule, MatDividerModule, MatToolbarModule, MatIconModule} from '@angular/material';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,7 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { WebStorageComponent } from './components/web-storage/web-storage.component';
 import { ReactiveDynamicComplexFormsComponent } from './components/reactive-dynamic-complex-forms/reactive-dynamic-complex-forms.component';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
