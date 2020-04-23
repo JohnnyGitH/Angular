@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'reactive-dynamic-complex-forms', component: ReactiveDynamicComplexFormsComponent },
   { path: 'item-replay', component: ItemReplayViewComponent },
   { path: 'web-storage', component: WebStorageComponent },
+  { path: 'i18n', loadChildren: () => import('./i18n/i18n.module').then(m => m.I18nModule) },
   { path: '**', component: HomeViewComponent }
   ];
 

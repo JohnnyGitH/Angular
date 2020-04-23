@@ -1,0 +1,18 @@
+<div class="main-div">
+<mat-card>
+    <mat-card-header>
+        <!--We will pass in the proper language title into the mat-card-title-->
+        <mat-card-title [translate]="'I18N.TITLE'"></mat-card-title>
+        <mat-card-subtitle translate [translateParams]="this.langParam">I18N.SUBTITLE</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image width="100px" src="./assets/fresh.png" alt="Phresh Princ3">
+    <mat-card-content>
+        <!--This is where we have the content to translate-->
+        <app-content-card></app-content-card>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="warn"
+        (click)="this.convertLanguage()">{{ 'I18N.BUTTONS.LANGUAGE' | translate }}</button>
+    </mat-card-actions>
+</mat-card>
+</div>
