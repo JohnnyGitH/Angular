@@ -1,0 +1,10 @@
+{
+    "I18N": {
+      "TITLE": "Internationalization",
+      "SUBTITLE": "Current language: {{lang}}",
+      "BODY": "Maintenant, c'est une histoire sur la façon dont ma vie a été bouleversée et je voudrais prendre une minute, asseyez-vous juste là, je vais vous dire comment je suis devenu le prince d'une ville appelée Bel-Air. Dans l'ouest de Philadelphie, né et élevé, sur le terrain de jeu, c'est là que j'ai passé la plupart de mes jours, Chillin 'out maxin' relaxin 'all cool, and shoot some b-ball outside of the school, when a couple of guys that up to no bon, a commencé à faire des ennuis dans mon quartier. J'ai eu un petit combat et ma mère a eu peur, elle a dit 'tu bouges' avec ta tante et ton oncle à Bel Air.",
+      "BUTTONS": {
+        "LANGUAGE": "English"
+      }
+    }
+  }

@@ -1,0 +1,10 @@
+{
+"I18N": {
+    "TITLE": "Internationalization",
+    "SUBTITLE": "Current language: {{lang}}",
+    "BODY": "Now this is a story all about how, my life got flipped-turned upside down, and I'd like to take a minute, just sit right there,I'll tell you how I became the prince of a town called Bel-Air. In west Philadelphia born and raised, on the playground is where I spent most of my days, Chillin' out maxin' relaxin' all cool, and shooting some b-ball outside of the school, when a couple of guys who were up to no good, started making trouble in my neighborhood. I got in one little fight and my mom got scared, she said 'You're movin' with your auntie and uncle in Bel Air.\"",
+    "BUTTONS": {
+      "LANGUAGE": "Français"
+    }
+  }
+}
