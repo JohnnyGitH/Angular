@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { I18nComponent } from './i18n/i18n.component';
 import { ContentCardComponent } from './content-card/content-card.component';
 import { MatCardModule, MatButtonModule } from '@angular/material';
-import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateLoader, TranslateStore } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { Language } from './models/language.enum';
@@ -35,6 +34,6 @@ export function TranslateLoaderFactory(http: HttpClient): TranslateHttpLoader {
         }
       })
     ],
-    providers:[TranslateStore]
+    providers: [TranslateStore]
 })
 export class I18nModule { }

@@ -1,0 +1,26 @@
+<div class="main-div">
+ <mat-card>
+        <mat-card-title>
+            <h2>
+                <span>Unit Testing</span>
+            </h2>
+        </mat-card-title>
+
+    <img mat-card-image width="100px" src="./assets/test.jpg" alt="test">
+
+    <h3>This is a project to help learn about Unit Testing</h3>
+    <mat-form-field>
+        <mat-label [attr.for]="">Value to echo</mat-label>
+        <input matInput [formControl]="this.inputControl" />
+      </mat-form-field>
+
+    <button mat-raised-button 
+    class="capitalize" 
+    color="warn"
+    (click)="submit()">
+       Submit
+    </button>
+</mat-card>
+</div>
+
+<div>{{ this.echoResult | uppercase }}</div>
